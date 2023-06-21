@@ -1,0 +1,79 @@
+:root {
+    --clr-primary:hsl(0, 0%, 100%);
+    --clr-primary-light: hsl(212, 45%, 89%);
+    --clr-primary-mid: hsl(220, 15%, 55%);
+    --clr-primary-dark: hsl(218, 44%, 22%);
+
+    --ff: 'Outfit', sans-serif;
+
+}
+
+/*css reset*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+
+body {
+    background-color: var(--clr-primary-light);
+    min-height: 100vh;
+    display: grid;
+    place-content:center;
+    font-family: var(--ff);
+}
+.container {
+    background-color: var(--clr-primary);
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    max-width: 330px;
+}
+
+.code {
+    display: block;
+    padding: 1rem;
+    border-radius: 8%;
+}
+
+.content {
+    padding: 1rem 1.5rem;
+    text-align: center;
+       
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+p {
+    font-size: 1rem;
+    color: var(--clr-primary-mid);
+    padding: 1rem;
+}
+
+
+
+
+
+.attribution { 
+font-size: 11px; text-align: center;
+ }
+.attribution a { 
+color: hsl(228, 45%, 44%);
+}
